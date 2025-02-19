@@ -1,1 +1,98 @@
-<h1>Hello! :)</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Advisory Firm</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: 'Lato', sans-serif;
+        }
+        .bg-image {
+            background-image: url('/lynx.jpg');
+            height: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        .content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: white;
+            width: 90%;
+            max-width: 1000px;
+        }
+        p {
+            font-size: 2.2em;
+            font-weight: 300;
+            line-height: 1.6;
+            letter-spacing: 0.02em;
+        }
+        .quote-container {
+            margin-top: 30px;
+        }
+        .quote {
+            font-size: 1.5em;
+            font-style: italic;
+            margin-bottom: 10px;
+        }
+        .attribution {
+            font-family: 'Roboto', sans-serif;
+            font-size: 1.2em;
+            font-weight: 300;
+            margin-top: 0;
+        }
+        
+        @media (max-width: 768px) {
+            p {
+                font-size: 1.8em;
+            }
+            .quote {
+                font-size: 1.3em;
+            }
+            .attribution {
+                font-size: 1em;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            p {
+                font-size: 1.5em;
+            }
+            .quote {
+                font-size: 1.1em;
+            }
+            .attribution {
+                font-size: 0.9em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-image">
+        <div class="overlay"></div>
+        <div class="content">
+            <p>Helping private market firms become more investable and elevate their capital formation strategy.</p>
+            <div class="quote-container">
+                <p class="quote">"Winning isn't everything; it's the only thing."</p>
+                <p class="attribution">Henry Russell "Red" Sanders</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
